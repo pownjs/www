@@ -7,4 +7,4 @@ git config user.name "Travis-CI"
 git config user.email "travis-ci@gnucitizen.org"
 git add .
 git commit -m "Deployed to Github Pages"
-git push --force --quiet "https://${GH_TOKEN}@github.com/opendevsecops/www" master:gh-pages > /dev/null 2>&1
+git push --force --quiet "https://${GH_TOKEN}@github.com/pownjs/www" master:gh-pages > /dev/null 2>&1

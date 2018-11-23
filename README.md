@@ -4,4 +4,4 @@
 
 # WWW
 
-The main site of OpenDevSecOps.
+The main site of PownJS.
