@@ -1,0 +1,14 @@
+{
+  "locals": {
+    "siteUrl": "https://pownjs.org"
+  },
+
+  "require": {
+    "process": "process"
+  },
+
+  "plugins": [
+    "wintersmith-less",
+    "wintersmith-browserify"
+  ]
+}

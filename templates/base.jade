@@ -1,0 +1,21 @@
+doctype html
+
+- function getPageUrl(res) {
+-   if (process.env.NODE_ENV === 'production') {
+-     return res.getUrl().replace(/\.html$/, '')
+-   } else {
+-     return res.getUrl()
+-   }
+- }
+
+html(lang="en")
+    head
+        block head
+            title=page.title
+
+            script(type="text/javascript", src=contents['all.js'].getUrl())
+            link(type="text/css", href=contents['all.less'].getUrl(), rel="stylesheet")
+
+    body
+        block body
+            !=page.html
