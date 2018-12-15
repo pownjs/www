@@ -16,5 +16,5 @@ npm install -g pown@latest
 
 * Follow us at <a href="https://twitter.com/pownjs" target="_blank">@pownjs</a>
 * Join the conversation on <a href="https://join.slack.com/t/pownjs/shared_invite/enQtNTA0NTA0Njk4OTk2LWU0ZGRhNDlhOGZhMWZkZjg5NmU4NzI1YWNmZGQzOWYxOWE5OWIzODgwODczZjAyYzA3YzdjZGIzZjliNmNhMDI" target="_blank">slack</a>
-* Explore the code at <a href="https://github.com/pownjs/pown" target="_blank">github</a>
+* Explore the code at <a href="https://github.com/pownjs/" target="_blank">github</a>
 </code></pre>
