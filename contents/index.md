@@ -26,11 +26,30 @@ npm install -g pown@latest
 <strong>Commands</strong>
 <strong>--------</strong>
 
+* pown
 * proxy
 * dicts
 * recon
+* buster
 * credits
 * modules
+
+<strong>[[ Pown ]]</strong>
+
+Usage: pown [options] <command> [command options]
+
+Commands:
+  pown modules                    List loadable modules
+  pown buster [options] <url>     Web file and directory bruteforcer (a.k.a dirbuster)
+  pown credits [options]          list contributors and credits
+  pown dicts [options] <search>   Assorted Dictionaries
+  pown proxy [options] [command]  HTTP proxy
+  pown recon [options] <command>  Target recon
+
+Options:
+  --version  Show version number  [boolean]
+  --debug    Debug mode  [boolean]
+  --help     Show help  [boolean]
 
 <strong>[[ Proxy ]]</strong>
 
@@ -40,8 +59,7 @@ HTTP proxy
 
 Options:
   --version                 Show version number  [boolean]
-  --modules, -m             Load modules  [string]
-  --debug, -d               Debug mode  [boolean]
+  --debug                   Debug mode  [boolean]
   --help                    Show help  [boolean]
   --log, -l                 Log requests and responses  [boolean] [default: false]
   --host, -h                Host to listen to  [string] [default: "0.0.0.0"]
@@ -52,7 +70,7 @@ Options:
   --ws-host                 Web socket server host  [string] [default: "0.0.0.0"]
   --ws-port                 Web socket server port  [number] [default: 9090]
   --ws-app                  Open app  [string] [choices: "", "httpview"] [default: ""]
-  --certs-dir               Directory for the certificates  [string] [default: "~/.pown/proxy/certs"]
+  --certs-dir               Directory for the certificates  [string] [default: "/Users/petko.petkov/.pown/proxy/certs"]
   --server-key-length       Default key length for certificates  [number] [default: 1024]
   --default-ca-common-name  The CA common name  [string] [default: "Pown.js Proxy"]
 
@@ -64,8 +82,7 @@ Assorted Dictionaries
 
 Options:
   --version       Show version number  [boolean]
-  --modules, -m   Load modules  [string]
-  --debug, -d     Debug mode  [boolean] [default: false]
+  --debug         Debug mode  [boolean]
   --help          Show help  [boolean]
   --download, -d  Download found dictionaries  [boolean] [default: false]
   --regex, -r     Search with regex  [boolean] [default: false]
@@ -82,10 +99,30 @@ Commands:
   pown recon diff <fileA> <fileB>   Perform a diff between two recon files  [aliases: d]
 
 Options:
-  --version      Show version number  [boolean]
-  --modules, -m  Load modules  [string]
-  --debug, -d    Debug mode  [boolean]
-  --help         Show help  [boolean]
+  --version  Show version number  [boolean]
+  --debug    Debug mode  [boolean]
+  --help     Show help  [boolean]
+
+<strong>[[ Buster ]]</strong>
+
+pown buster [options] <url>
+
+Web file and directory bruteforcer (a.k.a dirbuster)
+
+Options:
+  --version                   Show version number  [boolean]
+  --debug                     Debug mode  [boolean]
+  --help                      Show help  [boolean]
+  --request-method, -m        Request method  [string] [default: "GET"]
+  --name-dictionary, -n       Name dictionary file  [string]
+  --extension-dictionary, -e  Extension dictionary file  [string]
+  --name-prefix               Name prefix  [string] [default: "/"]
+  --name-suffix               Name suffix  [string] [default: ""]
+  --extension-prefix          Extension prefix  [string] [default: "."]
+  --extension-suffix          Extension suffix  [string] [default: ""]
+  --request-concurrency, -r   The number of request to run concurrently  [string] [default: Infinity]
+  --load-concurrency, -l      The number of assync operations to run concurrently  [string] [default: Infinity]
+  --yes, -y                   Answer yes to all questions  [boolean] [default: false]
 
 <strong>[[ Credits ]]</strong>
 
@@ -94,12 +131,11 @@ pown credits [options]
 list contributors and credits
 
 Options:
-  --version      Show version number  [boolean]
-  --modules, -m  Load modules  [string]
-  --debug, -d    Debug mode  [boolean]
-  --help         Show help  [boolean]
-  --only, -o     Only Pown.js contributors  [boolean]
- 
+  --version   Show version number  [boolean]
+  --debug     Debug mode  [boolean]
+  --help      Show help  [boolean]
+  --only, -o  Only Pown.js contributors  [boolean]
+
 <strong>[[ Modules ]]</strong>
 
 pown modules
@@ -107,8 +143,7 @@ pown modules
 List loadable modules
 
 Options:
-  --version      Show version number  [boolean]
-  --modules, -m  Load modules  [string]
-  --debug, -d    Debug mode  [boolean]
-  --help         Show help  [boolean]
+  --version  Show version number  [boolean]
+  --debug    Debug mode  [boolean]
+  --help     Show help  [boolean]
 </code></pre>
