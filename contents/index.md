@@ -1,5 +1,6 @@
 ---
 template: base.jade
+title: Pownage guaranteed
 ---
 
 <pre><code>
