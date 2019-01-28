@@ -6,4 +6,5 @@
 
 The main site of PownJS.
 
-![Screenshot](https://urlscan.io/liveshot/?width=1024&height=768&url=http%3A%2F%2Fpownjs.com)
+|![Screenshot](https://urlscan.io/liveshot/?width=1024&height=768&url=http%3A%2F%2Fpownjs.com)|
+|-|
