@@ -24,8 +24,8 @@ Pownage guaranteed
 
 npm install -g pown@latest
 
-<strong>Commands</strong>
-<strong>--------</strong>
+<strong>Usage</strong>
+<strong>-----</strong>
 
 * pown
 * proxy
@@ -35,7 +35,7 @@ npm install -g pown@latest
 * credits
 * modules
 
-<strong>[[ Pown ]]</strong>
+<strong>[[ pown ]]</strong>
 
 Usage: pown [options] <command> [command options]
 
@@ -52,7 +52,7 @@ Options:
   --debug    Debug mode  [boolean]
   --help     Show help  [boolean]
 
-<strong>[[ Proxy ]]</strong>
+<strong>[[ proxy ]]</strong>
 
 pown proxy [options] [command]
 
@@ -71,11 +71,11 @@ Options:
   --ws-host                 Web socket server host  [string] [default: "0.0.0.0"]
   --ws-port                 Web socket server port  [number] [default: 9090]
   --ws-app                  Open app  [string] [choices: "", "httpview"] [default: ""]
-  --certs-dir               Directory for the certificates  [string] [default: "/Users/petko.petkov/.pown/proxy/certs"]
+  --certs-dir               Directory for the certificates  [string] [default: "/Users/pdp/.pown/proxy/certs"]
   --server-key-length       Default key length for certificates  [number] [default: 1024]
   --default-ca-common-name  The CA common name  [string] [default: "Pown.js Proxy"]
 
-<strong>[[ Dicts ]]</strong>
+<strong>[[ dicts ]]</strong>
 
 pown dicts [options] <search>
 
@@ -88,7 +88,7 @@ Options:
   --download, -d  Download found dictionaries  [boolean] [default: false]
   --regex, -r     Search with regex  [boolean] [default: false]
 
-<strong>[[ Recon ]]</strong>
+<strong>[[ recon ]]</strong>
 
 pown recon [options] <command>
 
@@ -104,7 +104,7 @@ Options:
   --debug    Debug mode  [boolean]
   --help     Show help  [boolean]
 
-<strong>[[ Buster ]]</strong>
+<strong>[[ buster ]]</strong>
 
 pown buster [options] <url>
 
@@ -114,7 +114,7 @@ Options:
   --version                   Show version number  [boolean]
   --debug                     Debug mode  [boolean]
   --help                      Show help  [boolean]
-  --request-method, -m        Request method  [string] [default: "GET"]
+  --request-method, -X        Request method  [string] [default: "GET"]
   --name-dictionary, -n       Name dictionary file  [string]
   --extension-dictionary, -e  Extension dictionary file  [string]
   --name-prefix               Name prefix  [string] [default: "/"]
@@ -123,9 +123,18 @@ Options:
   --extension-suffix          Extension suffix  [string] [default: ""]
   --request-concurrency, -r   The number of request to run concurrently  [string] [default: Infinity]
   --load-concurrency, -l      The number of assync operations to run concurrently  [string] [default: Infinity]
+  --header, -H                Set header  [array] [default: []]
+  --timeout, -t               Request timeout in milliseconds  [number] [default: 30000]
+  --all, -y                   Display all results  [boolean] [default: false]
   --yes, -y                   Answer yes to all questions  [boolean] [default: false]
+  --blessed, -b               Start with blessed ui  [boolean] [default: false]
 
-<strong>[[ Credits ]]</strong>
+Examples:
+  pown buster -X HEAD -n words.txt http://target                                             Send requests using the HEAD HTTP method
+  pown buster -H 'Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l' -n words.txt http://target  Send basic authentication headers
+  pown buster -b --all -n words.txt http://target                                            Start buster but also open the results in nice text user interface
+
+<strong>[[ credits ]]</strong>
 
 pown credits [options]
 
@@ -137,7 +146,7 @@ Options:
   --help      Show help  [boolean]
   --only, -o  Only Pown.js contributors  [boolean]
 
-<strong>[[ Modules ]]</strong>
+<strong>[[ modules ]]</strong>
 
 pown modules
 
