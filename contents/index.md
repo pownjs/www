@@ -29,27 +29,26 @@ npm install -g pown@latest
 
 * pown
 * proxy
-* dicts
 * recon
 * buster
+* dicts
+* shell
 * credits
-* modules
 
 <strong>[[ pown ]]</strong>
 
-Usage: pown [options] <command> [command options]
+pown [options] <command> [command options]
 
 Commands:
-  pown modules                    List loadable modules
   pown buster [options] <url>     Web file and directory bruteforcer (a.k.a dirbuster)
   pown credits [options]          list contributors and credits
   pown dicts [options] <search>   Assorted Dictionaries
   pown proxy [options] [command]  HTTP proxy
   pown recon [options] <command>  Target recon
+  pown script <file>              Simple scripting engine
 
 Options:
   --version  Show version number  [boolean]
-  --debug    Debug mode  [boolean]
   --help     Show help  [boolean]
 
 <strong>[[ proxy ]]</strong>
@@ -60,7 +59,6 @@ HTTP proxy
 
 Options:
   --version                 Show version number  [boolean]
-  --debug                   Debug mode  [boolean]
   --help                    Show help  [boolean]
   --log, -l                 Log requests and responses  [boolean] [default: false]
   --host, -h                Host to listen to  [string] [default: "0.0.0.0"]
@@ -75,19 +73,6 @@ Options:
   --server-key-length       Default key length for certificates  [number] [default: 1024]
   --default-ca-common-name  The CA common name  [string] [default: "Pown.js Proxy"]
 
-<strong>[[ dicts ]]</strong>
-
-pown dicts [options] <search>
-
-Assorted Dictionaries
-
-Options:
-  --version       Show version number  [boolean]
-  --debug         Debug mode  [boolean]
-  --help          Show help  [boolean]
-  --download, -d  Download found dictionaries  [boolean] [default: false]
-  --regex, -r     Search with regex  [boolean] [default: false]
-
 <strong>[[ recon ]]</strong>
 
 pown recon [options] <command>
@@ -95,13 +80,12 @@ pown recon [options] <command>
 Target recon
 
 Commands:
-  pown recon transform <transform>  Perform inline transformation  [aliases: t]
-  pown recon select <expression>    Perform a selection  [aliases: s]
-  pown recon diff <fileA> <fileB>   Perform a diff between two recon files  [aliases: d]
+  pown recon transform <transform>    Perform inline transformation  [aliases: t]
+  pown recon select <expressions...>  Perform a selection  [aliases: s]
+  pown recon diff <fileA> <fileB>     Perform a diff between two recon files  [aliases: d]
 
 Options:
   --version  Show version number  [boolean]
-  --debug    Debug mode  [boolean]
   --help     Show help  [boolean]
 
 <strong>[[ buster ]]</strong>
@@ -112,7 +96,6 @@ Web file and directory bruteforcer (a.k.a dirbuster)
 
 Options:
   --version                   Show version number  [boolean]
-  --debug                     Debug mode  [boolean]
   --help                      Show help  [boolean]
   --request-method, -X        Request method  [string] [default: "GET"]
   --name-dictionary, -n       Name dictionary file  [string]
@@ -134,6 +117,34 @@ Examples:
   pown buster -H 'Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l' -n words.txt http://target  Send basic authentication headers
   pown buster -b --all -n words.txt http://target                                            Start buster but also open the results in nice text user interface
 
+<strong>[[ dicts ]]</strong>
+
+pown dicts [options] <search>
+
+Assorted Dictionaries
+
+Options:
+  --version       Show version number  [boolean]
+  --help          Show help  [boolean]
+  --download, -d  Download found dictionaries  [boolean] [default: false]
+  --regex, -r     Search with regex  [boolean] [default: false]
+
+<strong>[[ shell ]]</strong>
+
+pown [options] <command> [command options]
+
+Commands:
+  pown buster [options] <url>     Web file and directory bruteforcer (a.k.a dirbuster)
+  pown credits [options]          list contributors and credits
+  pown dicts [options] <search>   Assorted Dictionaries
+  pown proxy [options] [command]  HTTP proxy
+  pown recon [options] <command>  Target recon
+  pown script <file>              Simple scripting engine
+
+Options:
+  --version  Show version number  [boolean]
+  --help     Show help  [boolean]
+
 <strong>[[ credits ]]</strong>
 
 pown credits [options]
@@ -142,18 +153,6 @@ list contributors and credits
 
 Options:
   --version   Show version number  [boolean]
-  --debug     Debug mode  [boolean]
   --help      Show help  [boolean]
   --only, -o  Only Pown.js contributors  [boolean]
-
-<strong>[[ modules ]]</strong>
-
-pown modules
-
-List loadable modules
-
-Options:
-  --version  Show version number  [boolean]
-  --debug    Debug mode  [boolean]
-  --help     Show help  [boolean]
 </code></pre>
