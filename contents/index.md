@@ -32,7 +32,7 @@ npm install -g pown@latest
 * recon
 * buster
 * dicts
-* shell
+* script
 * credits
 
 <strong>[[ pown ]]</strong>
@@ -129,17 +129,11 @@ Options:
   --download, -d  Download found dictionaries  [boolean] [default: false]
   --regex, -r     Search with regex  [boolean] [default: false]
 
-<strong>[[ shell ]]</strong>
+<strong>[[ script ]]</strong>
 
-pown [options] <command> [command options]
+pown script <file>
 
-Commands:
-  pown buster [options] <url>     Web file and directory bruteforcer (a.k.a dirbuster)
-  pown credits [options]          list contributors and credits
-  pown dicts [options] <search>   Assorted Dictionaries
-  pown proxy [options] [command]  HTTP proxy
-  pown recon [options] <command>  Target recon
-  pown script <file>              Simple scripting engine
+Simple scripting engine
 
 Options:
   --version  Show version number  [boolean]
