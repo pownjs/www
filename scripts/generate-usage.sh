@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 COMMANDS="pown"
-SUBCOMMANDS="proxy recon buster dicts script credits"
+SUBCOMMANDS="proxy recon buster dicts script shell credits update"
 
 echo "<strong>Usage</strong>"
 echo "<strong>-----</strong>"

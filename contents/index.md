@@ -33,19 +33,23 @@ npm install -g pown@latest
 * buster
 * dicts
 * script
+* shell
 * credits
+* update
 
 <strong>[[ pown ]]</strong>
 
 pown [options] <command> [command options]
 
 Commands:
+  pown update [options]           Update global installation of pown  [aliases: upgrade, up]
   pown buster [options] <url>     Web file and directory bruteforcer (a.k.a dirbuster)
   pown credits [options]          list contributors and credits
   pown dicts [options] <search>   Assorted Dictionaries
   pown proxy [options] [command]  HTTP proxy
   pown recon [options] <command>  Target recon
   pown script <file>              Simple scripting engine
+  pown shell [options]            Simple shell
 
 Options:
   --version  Show version number  [boolean]
@@ -139,6 +143,16 @@ Options:
   --version  Show version number  [boolean]
   --help     Show help  [boolean]
 
+<strong>[[ shell ]]</strong>
+
+pown shell [options]
+
+Simple shell
+
+Options:
+  --version  Show version number  [boolean]
+  --help     Show help  [boolean]
+
 <strong>[[ credits ]]</strong>
 
 pown credits [options]
@@ -149,4 +163,14 @@ Options:
   --version   Show version number  [boolean]
   --help      Show help  [boolean]
   --only, -o  Only Pown.js contributors  [boolean]
+
+<strong>[[ update ]]</strong>
+
+pown update [options]
+
+Update global installation of pown
+
+Options:
+  --version  Show version number  [boolean]
+  --help     Show help  [boolean]
 </code></pre>
