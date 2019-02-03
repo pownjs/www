@@ -34,6 +34,7 @@ npm install -g pown@latest
 * dicts
 * script
 * shell
+* preferences
 * credits
 * update
 
@@ -46,9 +47,10 @@ Commands:
   pown buster [options] <url>     Web file and directory bruteforcer (a.k.a dirbuster)
   pown credits [options]          list contributors and credits
   pown dicts [options] <search>   Assorted Dictionaries
+  pown preferences <command>      Preferences
   pown proxy [options] [command]  HTTP proxy
-  pown recon [options] <command>  Target recon
-  pown script <file>              Simple scripting engine
+  pown recon <command>            Target recon
+  pown script [file|script]       Simple scripting engine
   pown shell [options]            Simple shell
 
 Options:
@@ -79,14 +81,19 @@ Options:
 
 <strong>[[ recon ]]</strong>
 
-pown recon [options] <command>
+pown recon <command>
 
 Target recon
 
 Commands:
-  pown recon transform <transform>    Perform inline transformation  [aliases: t]
-  pown recon select <expressions...>  Perform a selection  [aliases: s]
-  pown recon diff <fileA> <fileB>     Perform a diff between two recon files  [aliases: d]
+  pown recon transform <transform>        Perform inline transformation  [aliases: t]
+  pown recon select <selectors...>        Select nodes  [aliases: s]
+  pown recon add <nodes...>               Add nodes  [aliases: a]
+  pown recon remove <selectors...>        Remove nodes  [aliases: r]
+  pown recon merge <files...>             Perform a merge between at least two recon files  [aliases: m]
+  pown recon diff <fileA> <fileB>         Perform a diff between two recon files  [aliases: d]
+  pown recon group <name> <selectors...>  Group nodes  [aliases: g]
+  pown recon ungroup <selectors...>       Ungroup nodes  [aliases: u]
 
 Options:
   --version  Show version number  [boolean]
@@ -135,19 +142,34 @@ Options:
 
 <strong>[[ script ]]</strong>
 
-pown script <file>
+pown script [file|script]
 
 Simple scripting engine
 
 Options:
-  --version  Show version number  [boolean]
-  --help     Show help  [boolean]
+  --version   Show version number  [boolean]
+  --help      Show help  [boolean]
+  --eval, -e  Evaluate inline script  [boolean] [default: false]
 
 <strong>[[ shell ]]</strong>
 
 pown shell [options]
 
 Simple shell
+
+Options:
+  --version  Show version number  [boolean]
+  --help     Show help  [boolean]
+
+<strong>[[ preferences ]]</strong>
+
+pown preferences <command>
+
+Preferences
+
+Commands:
+  pown preferences get <tool> [name]          get preferences
+  pown preferences set <tool> <name> <value>  set preferences
 
 Options:
   --version  Show version number  [boolean]
