@@ -16,7 +16,6 @@ title: Pownage guaranteed
 Pownage guaranteed
 
 * Follow us on <a href="https://twitter.com/pownjs" target="_blank">twitter</a>
-* Join the conversation on <a href="https://join.slack.com/t/pownjs/shared_invite/enQtNTA0NTA0Njk4OTk2LWU0ZGRhNDlhOGZhMWZkZjg5NmU4NzI1YWNmZGQzOWYxOWE5OWIzODgwODczZjAyYzA3YzdjZGIzZjliNmNhMDI" target="_blank">slack</a>
 * Explore the code at <a href="https://github.com/pownjs/" target="_blank">github</a>
 
 <strong>Install</strong>
@@ -195,4 +194,15 @@ Update global installation of pown
 Options:
   --version  Show version number  [boolean]
   --help     Show help  [boolean]
+
+Credits
+-------
+* <a href="https://pdp.im" target="_blank">PDP.IM</a>
+* <a href="https://gnucitizen.org" target="_blank">GNUCITIZEN</a>
+* <a href="https://secapps.com" target="_blank">SecApps</a>
+* <a href="https://websecurify.com" target="_blank">Websecurify</a>
+* <a href="https://chatbotkit.com" target="_blank">ChatBotKit</a>
+* <a href="https://formshare.ai" target="_blank">Formshare</a>
+* <a href="https://cohesion.sh" target="_blank">Cohesion</a>
+* <a href="https://bountypage.com" target="_blank">BountyPage</a>
 </code></pre>
